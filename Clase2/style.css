@@ -1,0 +1,47 @@
+section{
+    margin-bottom: 20px;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    width: 80%;
+    padding: 30px;
+}
+video{
+    width: 500px;
+   
+}
+.contenedor{
+    position: relative;
+}
+h2{
+    position: absolute;
+    background-color: pink;
+    left: 20%;
+    top: 10%;
+ 
+}
+.contenedor{
+    background-color: black;
+    width:fit-content ;
+}
+.barra-rep{
+    display:flex ;  
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+button{
+    padding: 5px;
+    box-shadow: 2px 2px  grey;
+}
+
+/* pseudoclases ? hover - active , etc...*/
+
+button:active{
+    box-shadow: none;
+    /* transformar el elemento en un cierto elementos*/
+    transform: translate(2px,2px);
+}
+
+p{
+    color: white;
+}

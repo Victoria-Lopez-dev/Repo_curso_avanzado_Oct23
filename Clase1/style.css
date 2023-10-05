@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+/*comentario..*/
+/*
+selectores{
+    propiedad:valor,
+    propiedad:valor
+}
+*/
+
+/*tipos de selectores*/
+/*
+por etiqueta
+por id
+por class
+universal
+
+anidados - compuestos > + ~ 
+*/
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(20,200,50,0.3) ;
+    font-family: 'Mooli', sans-serif;
+}
+
+h1{
+    font-size: 76px;/* em rem -> 16px  -> 1em | 2em -> 16pxx2*/
+    text-decoration: underline;
+}
+
+
+p{
+    color: rgb(136, 131, 10);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+#titulo2{
+    color: green;
+    background-color: orange;
+    margin: 20px 33px ;
+    padding: 10px;
+    /* margin- padding- border*/
+}
+
+.titular{
+    box-sizing: border-box;
+    color: #2980b9;
+    width:300px;/* 50%*/
+    border-width: 5px;
+    border-color: red;
+    border-style: double;
+}
+
+ul>li>.titular{
+    color: tomato;
+    border: #2980b9 2px dotted;
+}
+.contenedor{
+    width: 500px;
+}
+.resaltar{
+    background-color: lightgrey;
+}
+/* 
+    colores primarios luminosos :rojo  verde azul
+
+    colores definidos por CSS -> ingles 
+    hexadecimal-> 6 digitos 0-9 A-F ->#
+    rgb/rgba -> red green blue 3 parametros 0 -255
+    rgba -> a -> numero entre el 0 y 1 para la transparencia
+*/
