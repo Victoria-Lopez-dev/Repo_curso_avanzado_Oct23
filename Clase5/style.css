@@ -1,0 +1,44 @@
+.mesa{
+    width: 500px;
+    border-radius: 100%;
+    height: 500px;
+}
+body{
+    background-color: lightcyan;
+}
+.mesa-p{
+    width: 100px;
+}
+
+#cohete{
+    width: 400px;
+}
+.svg-img{
+    width: 200px;
+}
+
+/*--------------------------------*/
+
+svg{
+    /* border: 3px solid darkblue; */
+    width: 500px;
+    height: 400px;
+    z-index: inherit;
+}
+
+/* etiquteas html -> propiedad transform :rotate, scale, translate */
+
+.elip-roja{
+    transform: rotate(45deg);/* indice en grados cuanto rotar (unidad deg-> degree)*/
+}
+
+
+.contenedor{
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+.cohete{
+    position: absolute;
+    top: 0;
+}
