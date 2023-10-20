@@ -1,0 +1,56 @@
+/* perspective -> elemento padre para darle profundidad y se note ese uso de las 3 dimenciones 
+
+perspective-origin -> enfoque desde donde miro al elemento
+*/
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+    color: white;
+    perspective: 1800px;
+    perspective-origin: center;
+}
+.cubo{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+/* transformaciones solas como con pseudoclases */
+
+/* .uno{
+    transform: rotate(-45deg);/* deg -> degree  + derecha ; - izquierda
+} */
+.uno{
+      transition:transform 0.5s;/* tiempo -> s(segundos) ms(milisegundos)*/
+}
+.uno:hover{
+    transform: rotateY(-85deg) ;
+  
+}
+
+.dos{
+    transform: scaleY(0.2) ;/* escalar el tamaño del elemento -> numeros sin unidad 
+    scale() scaleX() scaleY() */
+}
+.tres:hover{
+    transform: translateZ(-600px);/*translate(x,y)  translateX() translateY()*/
+}
+
+.cuatro{
+    transform: skewY(-20deg)/* utiliza deg  y skew(x,y) - derecha + izquierda skewY() skewX()*/
+}
+
+
+/*al utilizar varias transformaciones en un  mismo elementos estas se hacen de maneras simultanea*/
+
+/*
+transition -> el nombre de la propiedad y en que tiempo pasa de un estado inicial al final 
+
+si colocamos transition en la pseudoclase solo la aplica mientras se ejecuta dicha pseudoclase, cuando deja de producirse vuelve al inicio de manera abrupta
+
+si quiero que la transicion sea en ambos sentidos tengo que colocar transition en la clase sola 
+*/

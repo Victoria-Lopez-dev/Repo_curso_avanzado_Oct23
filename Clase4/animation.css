@@ -1,0 +1,79 @@
+h1:hover{   
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation:cambioColor 5s 2; */
+    animation-name: cambioColor;
+    animation-duration: 5s;
+    animation-iteration-count: 2;/* infinte si quiero que ejecute la animacion siempre*/
+    animation-timing-function: cubic-bezier(.08,.53,1,-0.07);
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+/* lo minimo que necesitamos en una animacion para ejecutarla:
+    -nombre de la animacion (animation-name )
+    - duracion (animation-duration) tiempo (s-ms)
+    - cuantas veces ejecutarla(animation-iteration-count)
+    - velocidad( animation-timing-function)-> ease-in|out ease-in-out  cubic-bezier()
+*/
+.contenedor{
+    border: 2px solid blue;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: top;
+}
+.padre{
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    transform: rotateY(30deg);
+     animation: girar 5s infinite; 
+    animation-direction: alternate;
+    transform-style: preserve-3d;/* "trasladar" la perspectiva tambien a los elementos "nietos"*/
+}
+.hijo{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 40px;
+    transform: rotateY(90deg);
+}
+
+/* animation (2d ,3d)
+
+crear la animacion  -> @keyframes nombre
+llamar a la animacion en el selector
+
+estado inicial y final (from to)
+
+cuadro a cuadro ( %)
+*/
+
+@keyframes cambioColor {
+    from{
+        background-color: cornflowerblue;
+    }
+    to{
+        background-color: yellow;
+        font-size: 40px;
+    }
+}
+
+@keyframes girar {
+    4%{
+        transform: rotateY(10deg);
+    }
+    23%{
+        transform: rotateY(40deg);
+    }
+
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
