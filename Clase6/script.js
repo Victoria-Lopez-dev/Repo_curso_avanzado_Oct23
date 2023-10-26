@@ -140,3 +140,9 @@ let animar=setInterval(()=>{mostrar(x,y); y++ ;x++},100)//repetir una misma func
 
 clearInterval(animar)
 
+
+console.log(128/60) //para obtener el resto de una division
+let total=128/60
+let resto=128%60
+console.log(total.toFixed(0))
+console.log(resto)

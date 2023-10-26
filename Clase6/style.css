@@ -3,3 +3,6 @@ canvas{
     border: 2px solid blue;
     background-color: rgb(247, 239, 240);
 }
+a{
+    text-decoration: none;
+}

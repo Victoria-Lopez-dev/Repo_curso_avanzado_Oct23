@@ -40,6 +40,22 @@ const inicioVideo=()=>{
 
     },1000);
 }
+//minutos 2 -> 61
+let transformarTiempoActual=(tiempoAct)=>{
+    //tiempoAct/60 ->minutos |tiempoAct%60 *60 -> segundos
+    if(tiempoAct >60){
+       if(tiempoAct<120){
+            minutos=1 //minutos=minutos+1
+        segundos= tiempoAct-60
+       } 
+       if(tiempoAct>120){
+        minutos=2
+        segundos=tiempoAct-120
+       }
+    }
+    //
+}
+
 
 const pausaVideo=()=>{
     video.pause();
